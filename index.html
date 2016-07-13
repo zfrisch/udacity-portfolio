@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- define charset and viewport for consistent rendering -->
+                <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Zachary Frisch: Portfolio</title> 
+		
+		<!-- load appopriate stylesheets and scripts.
+		google font must be loaded before portfoliostyle
+		jQuery must be loaded before loader.js, bootstrap.js and modal-script.js 
+		-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:200,300,400,700">
+		<link rel="stylesheet" href="css/portfoliostyle.css">
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="js/loader.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modal-script.js"></script>
+		
+
+	</head>
+	<body>
+		<!-- define a loading div with a gif to be displayed if there is a delay -->
+		<div id="loading">
+		<img src="images/ajax-loader.gif"/><h1 class="thick-font">Loading</h1>
+		</div>
+
+		<!-- define a bootstrap container class to hold the page contents -->
+		<div class="container">
+			<div class="row">
+				<header>	
+					<div class="col-md-6">
+						<!-- <img id="hamburger" class="img-responsive" src="images/hamburgermenu.png" alt="hamburger menu"/>
+						--><img id="logo" class="img-responsive" src="images/logo.webp" alt="Portfolio Logo"/>
+					</div>
+					<div class="col-md-6 text-right text-uppercase">
+						<h1 class="thick-font">Zachary Frisch</h1>
+						<h4 class="thin-font">Front-End Developer</h4>
+					</div>
+				</header>
+			</div>
+			<div class="row">
+				<section id="pagebreak" class="hidden-sm">
+					<div class="col-md-12">
+						<hr>
+					</div>	
+				</section>
+			</div>
+			<div class="row">
+				<section id="mainbox" class="hidden-sm">
+					<div class="col-md-12">
+						<img class="img-responsive" src="images/firstimage.webp" alt="Center Image"/>
+					</div>
+				</section>
+			</div>
+			<div class="row">
+				<section id="lowerHeader">
+					<div class="col-md-12">
+					<h2 class="medium-font">Featured Work:</h2>
+					</div>
+				</section>
+			</div>
+			<div class="row text-center">
+				<section id="articles">
+					<article>
+						<div class="col-md-4">
+							<img class="img-responsive" data-toggle="modal" data-target="#myModal" src="images/secondaryimage1.webp" alt="Projects Picture"/>
+							<h3 class="normal-font">Old Projects</h3>
+							<p class="thin-font blue-glow"><a href="http://github.com">https://github.com/zfrisch/old-projects</a></p>
+						</div>
+					</article>
+					<article>
+						<div class="col-md-4">
+							<img class="img-responsive" data-toggle="modal" data-target="#myModal" src="images/secondaryimage2.webp" alt="About Me Picture"/>
+							<h3 class="normal-font">About Me</h3>
+							<p class="thin-font blue-glow"><a href="http://github.com">https://github.com/zfrisch/about-me-project</a></p>
+						</div>
+					</article>
+					<article>
+						<div class="col-md-4">
+							<img class="img-responsive" data-toggle="modal" data-target="#myModal" src="images/secondaryimage3.webp" alt="Latest Work Picture"/>
+							<h3 class="normal-font">Latest</h3>
+							<p class="thin-font blue-glow"><a href="http://github.com">https://github.com/zfrisch/latest-builds</a></p>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+  			<div class="modal-dialog">
+
+    			<!-- Modal content-->
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+        					<h4 class="modal-title">Modal Header</h4>
+      					</div>
+      					<div class="modal-body">
+        					<p>Some text in the modal.</p>
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      					</div>
+    				</div>
+
+  			</div>
+		</div>
+	</body>
+</html>
