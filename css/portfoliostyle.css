@@ -17,7 +17,8 @@
 		min-width: 392px;
 	}	
 	#logo {
-		display: none;
+		max-width: 30% !important;
+		min-width: 30% !important;
 	}
 	.normal-font {
 		display: none;
