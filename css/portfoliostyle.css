@@ -13,8 +13,14 @@
 }
 }
 @media screen and (max-width: 500px) {
-	#mainbox, #logo, .normal-font {
-		display:none;
+	#mainbox img {
+		min-width: 392px;
+	}	
+	#logo {
+		display: none;
+	}
+	.normal-font {
+		display: none;
 	}
 	#lowerHeader {
 		background-color: #000;
